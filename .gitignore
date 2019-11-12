@@ -1,3 +1,7 @@
+src/config.py
+src/__pycache__
+kibana_access
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
