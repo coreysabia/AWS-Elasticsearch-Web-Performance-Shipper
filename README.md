@@ -1,10 +1,9 @@
 # endpoint_web_speed
- Visualize how long it takes for endpoints on your network to load the web with this dynamic, lightweight data shipper.
+Programatically ship endpoint web browser preformance data to an AWS Elasticsearch Service endpoint.
 
-This project is currently under Development. Please check back later.
+This project is currently under Development. Please check back soon.
 
-Every 5 min
-Selenium boots, and tries to fully load 5 different
+Selenium boots, and tries to fully load different websites, collects Preformance Timings listed below and shipps them to an AWS Elasticsearch Service.
 
 Flow of Performance Timings on Web Browsers:
 
@@ -14,6 +13,10 @@ navigationStart -> redirectStart -> redirectEnd -> fetchStart -> domainLookupSta
 
 
 
-TO DO:
-3. Automate operation to run every 5 minutes?? NOTES: CRON NOT WORKING IN DOCKER
-
+# Installation
+1. Install the chromedriver by using the command `brew cask install chromedriver`
+    - If you have already installed the chromedriver once and need to update it:
+        - First try `brew cask install chromedriver`
+        - If that errors try `brew cask reinstall chromedriver`
+        - If that also errors run `rm /usr/local/bin/chromedriver` and then rerun `brew cask install chromedriver`
+2. 

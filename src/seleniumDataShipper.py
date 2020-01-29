@@ -59,7 +59,7 @@ class SeleniumDataShipper(object):
 
         self.esClient = Elasticsearch(
             hosts = [{'host': config.AWS_ES_ENDPOINT['host'], 'port': 443}],
-            http_auth = self.awsAuth,
+            #http_auth = self.awsAuth,
             use_ssl = True,
             verify_certs = True,
             connection_class = RequestsHttpConnection
