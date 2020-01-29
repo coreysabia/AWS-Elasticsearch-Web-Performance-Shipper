@@ -59,6 +59,8 @@ See below for an explanation of the files in the tree.
 
 This data shipper is running on `Python 3.7`. We strongly advise the use of [Anaconda](https://www.anaconda.com/distribution/) to manage a virtual environment in which you can install the dependencies.
 
+#### Without Docker
+
 1. Clone this repository.
 2. Run `pip install -r requirements.txt` to install the dependencies.
 3. Generate some (AWS Elasticsearch Service) keys, and put them in a `src/config.py` file like so:
@@ -95,7 +97,22 @@ _Please use [`src/config_template.py`](src/config_template.py) as a reference._
 webPage = ["https://www.google.com"]
 ```
 
-6. Run `./run.py` and you're off
+6. Install the ChromeDriver by using the command for your specific OS:
+
+  - On macOS: `brew cask install chromedriver`
+    - Use Homebrew to install the chrome driver by running the command: `brew cask install chromedriver`
+      - If you have already installed the ChromeDriver once and need to update it:
+          - First try `brew cask install chromedriver`
+          - If that errors try `brew cask reinstall chromedriver`
+          - If that also errors run `rm /usr/local/bin/chromedriver` and then rerun `brew cask install chromedriver`
+    - Confirm it installed by running: `chromedriver -version`
+
+  - On Windows: `choco install chromedriver`
+    - Start by installing the [`Chocolatey`](https://chocolatey.org/docs/installation) dependency manager using the [`Install with CMD`](https://chocolatey.org/docs/installation#install-with-cmdexe) method.
+    - Then install the ChromeDriver by running: `choco install chromedriver`
+    - Confirm it installed by running: `chromedriver -version`
+
+7. Run `./run.py` and you're off
 
 ## Dependencies
 
@@ -103,9 +120,9 @@ webPage = ["https://www.google.com"]
 <div>
   <p align="center">
     <a href="https://github.com/coreysabia">
-      <img src="https://avatars3.githubusercontent.com/u/12410796?s=96&v=4" height="100px" width="100px" alt="Version 1.0">
+      <img src="https://avatars1.githubusercontent.com/u/12410796?s=400&u=ee153e9c9496939767c01315212efb65936c01e8&v=4" height="100px" width="100px" alt="Version 1.0">
     </a>
-    <p align="center"><strong>Corey</strong></p>
+    <p align="center"><strong>Corey Sabia</strong></p>
     <p align="center">Lead Developer</p>
     <p align="center"></p>
   </p>
