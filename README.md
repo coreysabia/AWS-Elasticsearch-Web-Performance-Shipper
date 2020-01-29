@@ -107,7 +107,7 @@ This data shipper is running on `Python 3.7`. We strongly advise the use of [Ana
 
 #### Without Docker
 
-We strongly reccommend that this data shipper be run on a docker instance (due to the ease of installation) on the host machine, however if you choose not to, the steps below outline the installation procedure.
+We strongly recommend that this data shipper be run on a docker instance (due to the ease of installation) on the host machine, however if you choose not to, the steps below outline the installation procedure.
 
 1. Clone this repository.
 2. Run `pip install -r requirements.txt` to install the dependencies.
