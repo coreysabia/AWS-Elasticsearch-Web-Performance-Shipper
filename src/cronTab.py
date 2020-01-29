@@ -1,5 +1,6 @@
 from crontab import CronTab
 import os
+from termcolor import colored
 
 class Crontab(object):
 
