@@ -47,7 +47,7 @@ See below for an explanation of the files in the tree.
 ├── run.py → Run script.
 └── src
     ├── __init__.py
-    ├── config.py → User created config file.
+    ├── config.py → Developer created config file.
     ├── config_template.py → Template for config.py file.
     ├── cronTab.py →
     └── seleniumDataShipper.py → Main shipper script.
@@ -59,6 +59,8 @@ See below for an explanation of the files in the tree.
 ## Run This Yourself
 
 ### Local Development
+
+This data shipper is running on `Python 3.7`. We strongly advise the use of either [Anaconda](https://www.anaconda.com/distribution/) or [pipenv](https://pipenv.readthedocs.io/en/latest/) to manage a virtual environment in which you can install the dependencies for local development.
 
 #### Without Docker
 
