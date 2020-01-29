@@ -2,7 +2,7 @@
 # Set these vars
 
 # Enter websites which you want to load during
-webPage = []
+webPage = ["https://www.google.com"]
 
 # Enter in your aws elasticsearch endpoint information
 AWS_ES_ENDPOINT = {
