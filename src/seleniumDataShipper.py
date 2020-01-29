@@ -1,8 +1,7 @@
-import config
-
 import json
 import os
 import datetime as dt
+import sys
 from sys import exit, argv
 
 from termcolor import colored
@@ -14,8 +13,10 @@ from selenium.webdriver.support import expected_conditions as EC
 from elasticsearch import Elasticsearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth
 
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+import config
 
-class SeleniumDataGathering(object):
+class SeleniumDataShipper(object):
 
 
     def __init__(self, verbose):
@@ -58,7 +59,7 @@ class SeleniumDataGathering(object):
 
         self.esClient = Elasticsearch(
             hosts = [{'host': config.AWS_ES_ENDPOINT['host'], 'port': 443}],
-            http_auth = self.awsAuth,
+            #http_auth = self.awsAuth,
             use_ssl = True,
             verify_certs = True,
             connection_class = RequestsHttpConnection
