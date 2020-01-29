@@ -38,7 +38,23 @@ navigationStart -> redirectStart -> redirectEnd -> fetchStart -> domainLookupSta
 
 See below for an explanation of the files in the tree.
 
-
+```text
+├── Pipfile → Pipenv requirements.
+├── Pipfile.lock → Pipenv lock file.
+├── README.md
+├── Dockerfile
+├── requirements.txt → Python requirements.
+├── run.py → Run script.
+└── src
+    ├── __init__.py
+    ├── config.py → User created config file.
+    ├── config_template.py → Template for config.py file.
+    ├── cronTab.py →
+    └── seleniumDataShipper.py → Main shipper script.
+└── test
+    ├── __init__.py
+    └── test.py → Unittest.
+```
 
 ## Run This Yourself
 
