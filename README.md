@@ -119,6 +119,46 @@ webPage = ["https://www.google.com"]
 
 #### With Docker
 
+1. Clone this repository.
+2. Run `pip install -r requirements.txt` to install the dependencies.
+3. Generate some (AWS Elasticsearch Service) keys, and put them in a `src/config.py` file like so:
+
+_Please use [`src/config_template.py`](src/config_template.py) file as a template._
+
+```python
+AWS_ES_ENDPOINT = {
+    'aws_access_key_id': '',
+    'aws_secret_access_key': '',
+    'host': '',
+    'region': '',
+    'service': ''
+}
+```
+
+4. To add the Elasticsearch index and source specific details look into the `src/config.py` you created, and put them in like so:
+
+_Please use [`src/config_template.py`](src/config_template.py) as a reference._
+
+``` python
+ES_INDEX = {
+    'index': '',
+    'doc_type': '',
+    'source': ''
+}
+```
+
+5. To add websites (i.e. `https://www.google.com`) look into the `src/config.py` you created, and put them in like so:
+
+_Please use [`src/config_template.py`](src/config_template.py) as a reference._
+
+```python
+webPage = ["https://www.google.com"]
+```
+
+6. Build the docker container with `docker build -t python-nld .`
+
+7. Run the docker container with `docker run python-nld python run.py --verbose=no` and your off!
+
 ### Production
 
 This data shipper is running on `Python 3.7`. We strongly advise the use of [Anaconda](https://www.anaconda.com/distribution/) to manage a virtual environment in which you can install the dependencies.
