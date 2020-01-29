@@ -2,10 +2,6 @@ import datetime as dt
 import sys
 import os
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-import config
-from seleniumDataShipper import SeleniumDataShipper
-
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
