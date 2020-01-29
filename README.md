@@ -112,7 +112,7 @@ webPage = ["https://www.google.com"]
     - Then install the ChromeDriver by running: `choco install chromedriver`
     - Confirm it installed by running: `chromedriver -version`
 
-7. Run `./run.py` and you're off
+7. Run `./run.py` and you're off!
 
 ## Dependencies
 
