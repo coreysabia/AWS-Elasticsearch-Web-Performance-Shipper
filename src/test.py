@@ -2,9 +2,9 @@ import datetime as dt
 import sys
 import os
 
-from seleniumDataShipper import SeleniumDataShipper
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 import config
+from seleniumDataShipper import SeleniumDataShipper
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
