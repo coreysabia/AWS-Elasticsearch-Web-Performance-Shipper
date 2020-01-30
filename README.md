@@ -5,11 +5,9 @@
         <img src="https://img.shields.io/badge/Made%20With-Python%203.7-blue.svg?style=for-the-badge" alt="Made with Python 3.7">
     </a>
 </p>
-<p align="center">
-    <a href="https://img.shields.io/badge/Version-1.3.3-lightgrey.svg">
-        <img src="https://img.shields.io/badge/Version-1.0.1-lightgrey.svg" alt="Version 1.0.1">
-    </a>
-</p>
+
+![Version](https://img.shields.io/badge/Version-1.0.1-lightgrey.svg" alt="Version 1.0.1)
+![EWS Python](https://github.com/coreysabia/AWS-Elasticsearch-Web-Performance-Shipper/workflows/EWS%20Python/badge.svg?branch=master)
 
 
 <p align="center">
