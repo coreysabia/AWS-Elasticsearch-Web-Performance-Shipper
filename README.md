@@ -1,10 +1,16 @@
-# AWS-Elasticsearch-Web-Performance-Shipper
+# AWS Elasticsearch Web Performance Data Shipper
 
 <p align="center">
-  <a href="https://www.python.org/downloads/">
-    <img src="https://img.shields.io/badge/Made%20With-Python%203.7-blue.svg?style=for-the-badge" alt="Made with Python 3.7">
-  </a>
+    <a href="https://www.python.org/downloads/">
+        <img src="https://img.shields.io/badge/Made%20With-Python%203.7-blue.svg?style=for-the-badge" alt="Made with Python 3.7">
+    </a>
 </p>
+<p align="center">
+    <a href="https://img.shields.io/badge/Version-1.3.3-lightgrey.svg">
+        <img src="https://img.shields.io/badge/Version-1.0.1-lightgrey.svg" alt="Version 1.0.1">
+    </a>
+</p>
+
 
 <p align="center">
 Programatically ship endpoint web browser preformance data to an AWS Elasticsearch Service endpoint.
@@ -13,7 +19,7 @@ This project is currently under Development. Please check back soon.
 
 ## Table of Contents
 
-- [Web Performance Shipper](#web-performance-shipper)
+- [Web Performance Shipper](#AWS-Elasticsearch-Web-Performance-Shipper)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Project Structure](#project-structure)
@@ -22,6 +28,8 @@ This project is currently under Development. Please check back soon.
       - [Without Docker](#without-docker)
       - [With Docker](#with-docker)
     - [Production](#production)
+      - [Without Docker](#prod-without-docker)
+      - [With Docker](#prod-with-docker)
   - [Dependencies](#dependencies)
   - [Meet the Team](#meet-the-team)
 
@@ -120,7 +128,6 @@ webPage = ["https://www.google.com"]
 #### With Docker
 
 1. Clone this repository.
-2. Run `pip install -r requirements.txt` to install the dependencies.
 3. Generate some (AWS Elasticsearch Service) keys, and put them in a `src/config.py` file like so:
 
 _Please use [`src/config_template.py`](src/config_template.py) file as a template._
@@ -155,15 +162,15 @@ _Please use [`src/config_template.py`](src/config_template.py) as a reference._
 webPage = ["https://www.google.com"]
 ```
 
-6. Build the docker container with `docker build -t python-nld .`
+6. Build the docker container with `docker build -t aws-es-web-performance-shipper .`
 
-7. Run the docker container with `docker run python-nld python run.py --verbose=no` and your off!
+7. Run the docker container with `docker run aws-es-web-performance-shipper python run.py --verbose=no` and your off!
 
 ### Production
 
 This data shipper is running on `Python 3.7`. We strongly advise the use of [Anaconda](https://www.anaconda.com/distribution/) to manage a virtual environment in which you can install the dependencies.
 
-#### Without Docker
+#### Prod Without Docker
 
 We strongly recommend that this data shipper be run on a docker instance (due to the ease of installation) on the host machine, however if you choose not to, the steps below outline the installation procedure.
 
